@@ -4,6 +4,7 @@
 def debug_view(request):
     log("debug view")
     require_admin()
+    record_debug(request)
     return render_debug(request)
 
 
